@@ -1,13 +1,14 @@
+from copyreg import pickle
 from flask import Flask, render_template, request
 import pandas as pd
-import joblib
 import numpy as np
+import joblib
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('Flightdelay.html')
+	return render_template('index.html')
 
 @app.route('/result', methods = ['POST'])
 def predict():
@@ -66,12 +67,14 @@ def predict():
 	prediction = preprocessAndPredict(inputs)
 	#Pass prediction to prediction template
 	print(inputs)
-	return render_template('/result.html', prediction = prediction)
+	return render_template('result.html', prediction = prediction)
 
 def preprocessAndPredict(inputs):
+	print(inputs)
+ 
 	test_data = np.array(inputs).reshape((1,16))
 	
-	model_file = open('D:\\IBM-Project-25904-1659976941\\Final Deliverables\\model.pkl', 'rb')
+	model_file = open('/Users/sindhupriya/Desktop/IBMCLOUD/local deployment/model.pkl', 'rb')
 	
 	trained_model = joblib.load(model_file)
 

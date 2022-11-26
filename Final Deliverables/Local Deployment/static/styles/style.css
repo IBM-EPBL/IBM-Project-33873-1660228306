@@ -28,7 +28,7 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 body{
-	background:url(../images/flight.jpg)  no-repeat center fixed;
+	background:url(./images/flight.jpg)  no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -86,7 +86,7 @@ body{
 	position: relative;
 }
 .Regisration-head span{
-	background: url(../images/user-icon.png) no-repeat -5px -6px;
+	background: url(./images/user-icon.png) no-repeat -5px -6px;
 	position: absolute;
 	top: 25%;
 	left: 13%;
@@ -106,7 +106,7 @@ body{
 	position:relative;
 		
 }
-.Regisration form input[type="text"],.Regisration form input[type="password"],
+.Regisration form input[type="text"],.Regisration form input[type="number"],
 select {
 	font-size: 15px;
 	outline: none;
@@ -132,14 +132,14 @@ select {
 
 }
 
-.Regisration form input[type="text"]:hover,.Regisration form input[type="password"]:hover{
+.Regisration form input[type="text"]:hover,.Regisration form input[type="number"]:hover{
 	box-shadow: 0 0 1em #56AF00;
 	-webkit-box-shadow: 0 0 1em #56AF00;
 	-o-box-shadow: 0 0 1em #56AF00;
 	-moz-box-shadow: 0 0 1em #56AF00;
 }
 form span{
-	background: url(../images/tick.png) no-repeat -1px -2px;
+	background: url(./images/tick.png) no-repeat -1px -2px;
 	position: absolute;
 	top: -4%;
 	right: -12%;
@@ -188,7 +188,7 @@ form span{
 	-webkit-transition: opacity 0.1s;
 }
 .p-container .checkbox input + i:after {
-	content: url(../images/ch-tick.png) no-repeat 7px 1px;
+	content: url(./images/ch-tick.png) no-repeat 7px 1px;
 	top: -2px;
 	left: -2px;
 	width: 15px;
@@ -335,7 +335,7 @@ form span{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff6633',GradientType=1 );
 }
 .checkbox-grid .green .radio:hover i,.checkbox-grid .radio .green input:checked + i, .green input:focus + i {
-	content: url(../images/dot.png) no-repeat 7px 1px;
+	content: url(./images/dot.png) no-repeat 7px 1px;
 	height:18px;
 	width:18px;
 }
